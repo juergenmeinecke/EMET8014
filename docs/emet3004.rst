@@ -1,0 +1,4 @@
+EMET3004
+==========
+
+Here the link to the website of `EMET3004 <https://juergenmeinecke.github.io/EMET3004/>`_

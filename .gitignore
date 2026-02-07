@@ -1,0 +1,19 @@
+# files
+Makefile
+
+# directories
+html_output/
+underhood/
+
+# Byte-compiled Python
+__pycache__/
+*.py[cod]
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*~
+*.swp
+*.swo
