@@ -1,34 +1,27 @@
 .. _textbook_label:
 
-Textbooks 
-****************
+Textbooks
+==========
 
-.. admonition:: Main Textbook
+Main textbook
+--------------
 
-    The main textbook for the course is Bruce Hansen's *Econometrics*.  
+The main textbook for the course is :download:`Econometrics <./_static/econometrics_textbook.pdf>` 
+by Bruce Hansen.
 
-    This wonderful book has been available publicly for many years, but it seems that since the
-    middle of 2021 the manuscript is in the process of being turned into an official textbook. 
+This great book has been publicly available in manuscript-form for many years (I have versions
+dating back to 2012!). Over the years it grew into a cutting edge advanced econometrics text.
+Sometime in 2021, the public updates stopped and the manuscript was turned into a formal textbook
+(published by Princeton University Press in
+2022).
 
-    I'm sharing here the last open-access version of the manuscript which contains all the material
-    that we need:
-
-    :download:`Econometrics by Bruce Hansen <../books/Econometrics_by_Bruce_Hansen.pdf>` 
-
-    This version is dated February 2021.
-
-.. admonition:: Preparing for the Course 
-
-    All of you will be familiar with linear regression and ordinary least squares estimation.
-    Chapters 2, 3, 4, and 5 of the Hansen book should refresh and deepen your knowledge. We will
-    cover these chapters in class, but reading and studying a little bit ahead of time may be
-    useful.
-
-    You will notice that the Hansen book makes heavy use of matrix algebra. My course does too!
-    I take your knowledge of matrix algebra for granted. You may want to brush up on your skills by
-    reading Hansen's appendix on matrix algebra!
+For our purposes, the publicly available version from early 2021 is just fine, and that's what I'm
+sharing in the link above.
 
 
+
+Other textbooks
+----------------
 
 Other books recommended for this course are:
 
@@ -40,6 +33,3 @@ Other books recommended for this course are:
 
 *   | Casella and Berger: *Statistical Inference*, (2001)
     | Timeless
-
-*   | Brockwell and Davis: *Time Series: Theory and Methods*, (2009)
-    | Nice chapter on Hilbert Space

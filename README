@@ -1,68 +1,14 @@
-# EMET8014 Course Website
+# EMET8014
 
-This repository contains course materials for EMET4314/8014 (Advanced Econometrics I), published as
-a static website via GitHub Pages.
+Course materials for EMET4314/8014 (Advanced Econometrics I) at ANU.
 
 **Live site:** https://juergenmeinecke.github.io/EMET8014/
 
-## Repository Structure
+## GitHub Codespaces
 
-```
-EMET8014/
-├── docs/                   # Sphinx documentation source (RST files)
-├── lecture_notes/          # Public lecture PDFs
-├── datasets/               # CSV datasets and descriptions
-├── underhood/              # Protected instructor materials (solutions, source files)
-└── .github/workflows/      # GitHub Actions CI/CD pipeline
-```
+To open a ready-to-go Julia + Jupyter environment in your browser, click:
 
-The `underhood/` directory contains master copies and solutions. Public directories are synced from there.
+[![Open in GitHub
+Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?repo=juergenmeinecke/EMET8014)
 
-## Publishing Workflow
-
-### Automated (GitHub Actions)
-
-Every push to `main` triggers the following pipeline (`.github/workflows/pages.yml`):
-
-1. **Sync assets** - rsync copies lecture PDFs and datasets into `docs/`
-2. **Install dependencies** - Sphinx and sphinx-rtd-theme
-3. **Build HTML** - `sphinx-build -b html docs docs/_build/html`
-4. **Deploy** - Upload to GitHub Pages
-
-The site typically updates within a few minutes of pushing.
-
-### Local Build
-
-To build locally:
-
-```bash
-# Install dependencies
-pip install -r docs/requirements.txt
-
-# Build (syncs assets and runs Sphinx)
-make html
-```
-
-Output is written to `html_output/`.
-
-## Editing Content
-
-- **Website pages:** Edit RST files in `docs/` (index.rst, lectures.rst, labs.rst, etc.)
-- **Lecture slides:** Update PDFs in `underhood/lecture_notes/`, then run `make html`
-- **Datasets:** Add/modify in `underhood/datasets/`, then run `make html`
-
-## Key Configuration Files
-
-| File | Purpose |
-|------|---------|
-| `docs/conf.py` | Sphinx configuration (theme, extensions, project metadata) |
-| `docs/requirements.txt` | Python dependencies for building docs |
-| `.github/workflows/pages.yml` | GitHub Actions deployment pipeline |
-| `Makefile` | Local build commands |
-
-## Technology Stack
-
-- **Documentation:** Sphinx with Read the Docs theme
-- **Math rendering:** MathJax
-- **CI/CD:** GitHub Actions
-- **Hosting:** GitHub Pages
+All required Julia packages are pre-installed -- just open a notebook and start working.

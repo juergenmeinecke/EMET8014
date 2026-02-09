@@ -33,33 +33,34 @@ your work after the weekly workshops or during consultation hours.
 Rubric
 ------
 
-Each problem set receives one of three marks: 0, 1/2, or 1, according to the rubric below.
+.. list-table:: Problem Set Marking Rubric
+   :widths: 15 85
+   :header-rows: 1
 
-1 mark
+   * - Mark
+     - Criteria
+   * - **1 mark**
+     - Complete and broadly correct.
+       
+       * You attempted all questions.
+       * Your working shows a clear method and the solution is overall correct.
+       * Any mistakes are minor (small arithmetic slips) and do not undermine 
+         the main reasoning.
 
-*   Complete and broadly correct.
-*   You attempted all questions.
-*   Your working shows a clear method and the solution is overall correct.
-*   Any mistakes are minor (e.g., small arithmetic/algebra slips) and do not undermine
-    the main reasoning.
-
-1/2 mark
-
-*   Substantial attempt, but with errors or gaps.
-*   You submitted work for the set and made meaningful progress on most
-    questions, but:
-
-    * there are noticeable errors in reasoning, definitions, or key steps, and/or
-    * some parts are incomplete or unclear, and/or
-    * final answers look doubtful even if the approach is partly right.
-
-*   Think of this as: “You engaged seriously, but there are issues to fix.”
-
-0 marks
-
-*   Not submitted, or
-*   Too incomplete to assess (e.g., only a small fraction attempted), or
-*   Mostly incorrect with little evidence of a viable method.
+   * - **1/2 mark**
+     - Substantial attempt, but with errors or gaps.
+       
+       * You submitted work for the set and made meaningful progress on most questions, but:
+       
+         * there are noticeable errors in reasoning, definitions, or key steps, and/or
+         * some parts are incomplete or unclear, and/or
+         * final answers look doubtful even if the approach is partly right.
+       
+       * Think of this as: "You engaged seriously, but there are issues to fix."
+   * - **0 marks**
+     - * Not submitted, or
+       * Too incomplete to assess (e.g., only a small fraction attempted), or
+       * Mostly incorrect with little evidence of a viable method.
 
 
 

@@ -3,8 +3,8 @@ Consultation
 
 These are our latest consultation times: 
 
-* Juergen: Tuesdays 10:30-11:30am at Arndt 1022
+* Juergen: Wednesday 10-11am right after the workshop @ Moran G008
 
-* Shu: Wednesdays 1-2pm at Arndt 2002
+* Shu: TBA
 
 Hope to see you there!
