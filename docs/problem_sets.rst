@@ -1,7 +1,7 @@
-.. _assignment_label:
+.. _problem_sets_label:
 
-Problem Sets 
-==============
+Problem Sets
+============
 
 Overview
 --------
@@ -82,7 +82,7 @@ Across your best 8 submissions, the maximum total raw mark you can get is 8.  To
 
 
 Help and Feedback
-------------------
+-----------------
 
 We do not offer any help on solving assignments!
 
@@ -91,8 +91,8 @@ workshop session. For example: Problem Set 1 is posted Monday of Week 1, due 11:
 2, and then discussed in the Week 2 workshop (currently scheduled for Wednesdays).
 
 
-Marking turnaround 
---------------------
+Marking turnaround
+------------------
 
 We aim to return marks within a few days of the due date (ideally in the same week).
 

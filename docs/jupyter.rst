@@ -1,8 +1,8 @@
 Get Julia-ready!
-=================
+================
 
 What are Julia and Jupyter?
-----------------------------
+---------------------------
 
 Econometrics is all about using data to answer real-world economic questions. To do this well, we
 need to be able to work with data—loading it, cleaning it, visualising it, and running statistical
@@ -95,7 +95,7 @@ Step 2: Install Julia
    Replace ``Julia-1.12`` with your actual Julia version number.
 
 Step 3: Verify Installation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Open a terminal (Command Prompt on Windows, Terminal on macOS/Linux) and type:
 
@@ -113,7 +113,7 @@ If you see this, Julia is successfully installed!
 
 
 Setting Up Visual Studio Code
-------------------------------
+-----------------------------
 
 **Step 1: Install VSCode**
 
@@ -177,7 +177,7 @@ Installing Julia Packages
 Julia has a built-in package manager that makes it easy to install and manage packages. This guide covers the essential commands you'll need for this course.
 
 Basic Package Installation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The easiest way to install packages is through Julia's package manager. 
 
@@ -200,7 +200,7 @@ Example:
    julia>
 
 Required Packages for This Course
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 For EMET8014, you'll need the following packages:
 
@@ -243,7 +243,7 @@ The first time you use a package in a Julia session, it will take a moment to co
 
 
 Working with Jupyter Notebooks
--------------------------------
+------------------------------
 
 If you're using Jupyter notebooks (recommended for this course), you can install packages directly
 in a notebook cell:

@@ -1,5 +1,5 @@
-Lectures 
-****************
+Lectures
+========
 
 Weekly lecture material will be posted here. I may update content as we go along.
 

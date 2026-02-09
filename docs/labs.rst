@@ -1,5 +1,5 @@
 Computer Labs
-=================
+=============
 
 We will be programming in the Julia language, and we access Julia from the VS Code editor.
 

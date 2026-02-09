@@ -1,10 +1,10 @@
 .. _textbook_label:
 
 Textbooks
-==========
+=========
 
 Main textbook
---------------
+-------------
 
 The main textbook for the course is :download:`Econometrics <./_static/econometrics_textbook.pdf>` 
 by Bruce Hansen.
@@ -21,7 +21,7 @@ sharing in the link above.
 
 
 Other textbooks
-----------------
+---------------
 
 Other books recommended for this course are:
 

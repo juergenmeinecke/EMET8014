@@ -1,5 +1,5 @@
 Class Summary
-*******************
+=============
 
 You can find the class summary on the 
 `ANU Programs & Courses website
