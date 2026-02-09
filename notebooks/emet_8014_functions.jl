@@ -29,18 +29,19 @@ where D = diag(û₁², ..., ûₙ²).
 """
 function lm_ols(Y::Vector{Float64}, X::Matrix{Float64})
     N, K = size(X)
-    
+
     # OLS estimator: use backslash for numerical stability
     β_hat = nothing  # YOUR CODE HERE
-    
+
     # Residuals
     u_hat = nothing  # YOUR CODE HERE
-    
+
     # Sandwich formula: bread * meat * bread
-    bread = nothing  # YOUR CODE HERE: inv(X' * X)
-    meat = nothing   # YOUR CODE HERE: X' * Diagonal(u_hat.^2) * X
-    Ω_hat_over_N = nothing  # YOUR CODE HERE: (N / (N - K)) * bread * meat * bread
-    
+    # Hint: consult the formula in the docstring above; D is constructed via Diagonal()
+    bread = nothing  # YOUR CODE HERE
+    meat = nothing   # YOUR CODE HERE
+    Ω_hat_over_N = nothing  # YOUR CODE HERE
+
     return β_hat, Ω_hat_over_N
 end
 
@@ -60,15 +61,16 @@ Compute standard errors, t-statistics, and p-values from estimates and variance 
 - `p`: K×1 vector of p-values (using Normal approximation)
 """
 function lm_inference(β_hat::Vector{Float64}, Ω_hat_over_N::Matrix{Float64})
-    # Standard errors: square root of diagonal elements
-    se = nothing  # YOUR CODE HERE: sqrt.(diag(...))
-    
-    # t-statistics
-    t = nothing  # YOUR CODE HERE: β_hat ./ se
-    
+    # Standard errors: square root of diagonal elements of the variance matrix
+    se = nothing  # YOUR CODE HERE
+
+    # t-statistics: ratio of estimates to their standard errors
+    t = nothing  # YOUR CODE HERE
+
     # Two-sided p-values using normal approximation
-    p = nothing  # YOUR CODE HERE: 2 * (1 .- cdf.(Normal(), abs.(t)))
-    
+    # Hint: use cdf() from Distributions and think about what "two-sided" means
+    p = nothing  # YOUR CODE HERE
+
     return se, t, p
 end
 
@@ -101,23 +103,24 @@ where D = diag(û₁², ..., ûₙ²) and û = Y - Xβ̂.
 """
 function lm_iv(Y::Vector{Float64}, X1::Matrix{Float64}, X2::Union{Vector{Float64}, Matrix{Float64}},
                Z1::Matrix{Float64}, Z2::Union{Vector{Float64}, Matrix{Float64}})
-    
+
     # Construct full X and Z matrices (endogenous regressor at end)
     X = Matrix{Float64}(hcat(X1, X2))
     Z = Matrix{Float64}(hcat(Z1, Z2))
     N, K = size(X)
-    
-    # IV estimator: β_hat = (Z'X)⁻¹ Z'Y
-    β_hat = nothing  # YOUR CODE HERE: (Z' * X) \ (Z' * Y)
-    
+
+    # IV estimator
+    β_hat = nothing  # YOUR CODE HERE
+
     # Residuals (using original X, not predicted X)
     u_hat = nothing  # YOUR CODE HERE
-    
-    # Robust variance: bread * meat * bread'
-    bread = nothing  # YOUR CODE HERE: inv(Z' * X)
-    meat = nothing   # YOUR CODE HERE: Z' * Diagonal(u_hat.^2) * Z
-    Ω_hat_over_N = nothing  # YOUR CODE HERE: (N / (N - K)) * bread * meat * bread'
-    
+
+    # Robust variance: sandwich formula (same structure as OLS but with Z replacing X)
+    # Hint: compare the formula in the docstring to lm_ols -- what changes?
+    bread = nothing  # YOUR CODE HERE
+    meat = nothing   # YOUR CODE HERE
+    Ω_hat_over_N = nothing  # YOUR CODE HERE
+
     return β_hat, Ω_hat_over_N
 end
 
@@ -151,33 +154,35 @@ Using predicted residuals would understate variance.
 """
 function lm_2sls(Y::Vector{Float64}, X1::Matrix{Float64}, X2::Union{Vector{Float64}, Matrix{Float64}},
                  Z1::Matrix{Float64}, Z2::Union{Vector{Float64}, Matrix{Float64}})
-    
+
     # Construct full matrices
     X = Matrix{Float64}(hcat(X1, X2))
     Z = Matrix{Float64}(hcat(Z1, Z2))
     N, K = size(X)
-    
+
     # Compute projections efficiently: avoid forming the N×N matrix Pz = Z(Z'Z)⁻¹Z'
     # Instead, compute X'PzX and X'PzY directly using K×L and L×L matrices
-    ZtZ_inv = nothing  # YOUR CODE HERE: inv(Z' * Z)
-    XtZ = nothing      # YOUR CODE HERE: X' * Z
-    ZtY = nothing      # YOUR CODE HERE: Z' * Y
-    
-    # 2SLS estimator: β_hat = (X'PzX)⁻¹ X'PzY = (X'Z (Z'Z)⁻¹ Z'X)⁻¹ X'Z (Z'Z)⁻¹ Z'Y
-    XtPzX = nothing    # YOUR CODE HERE: XtZ * ZtZ_inv * XtZ'
-    XtPzY = nothing    # YOUR CODE HERE: XtZ * ZtZ_inv * ZtY
-    β_hat = nothing    # YOUR CODE HERE: XtPzX \ XtPzY
-    
+    # Hint: start by computing Z'Z, X'Z, and Z'Y as building blocks
+    ZtZ_inv = nothing  # YOUR CODE HERE
+    XtZ = nothing      # YOUR CODE HERE
+    ZtY = nothing      # YOUR CODE HERE
+
+    # 2SLS estimator
+    # Hint: express X'PzX and X'PzY in terms of the building blocks above
+    XtPzX = nothing    # YOUR CODE HERE
+    XtPzY = nothing    # YOUR CODE HERE
+    β_hat = nothing    # YOUR CODE HERE
+
     # Residuals (use original X, not X̂)
     u_hat = nothing    # YOUR CODE HERE
-    
+
     # Robust variance: bread * meat * bread
-    # meat = X'Pz D Pz X = X'Z (Z'Z)⁻¹ Z'DZ (Z'Z)⁻¹ Z'X
-    ZtDZ = nothing     # YOUR CODE HERE: Z' * Diagonal(u_hat.^2) * Z
-    meat = nothing     # YOUR CODE HERE: XtZ * ZtZ_inv * ZtDZ * ZtZ_inv * XtZ'
-    bread = nothing    # YOUR CODE HERE: inv(XtPzX)
-    Ω_hat_over_N = nothing  # YOUR CODE HERE: (N / (N - K)) * bread * meat * bread
-    
+    # Hint: the meat involves Z'DZ projected through (Z'Z)⁻¹, analogous to the 2SLS estimator structure
+    ZtDZ = nothing     # YOUR CODE HERE
+    meat = nothing     # YOUR CODE HERE
+    bread = nothing    # YOUR CODE HERE
+    Ω_hat_over_N = nothing  # YOUR CODE HERE
+
     return β_hat, Ω_hat_over_N
 end
 
@@ -198,30 +203,32 @@ in the first-stage regression X2 = Z π + v.
 
 # Notes
 Uses heteroskedasticity-robust Wald test:
-    F = (π₂)' [V₂₂]⁻¹ (π₂) / L₂
-where π₂ are the coefficients on excluded instruments and V₂₂ is 
-the corresponding block of the variance matrix.
+    F = (Rπ̂)' [R V̂ R']⁻¹ (Rπ̂) / L₂
+where R selects the coefficients on excluded instruments and L₂ = dim(Z2).
+Currently only supports scalar X2 (single endogenous regressor).
 """
 function lm_2sls_ftest(Y::Vector{Float64}, X1::Matrix{Float64}, X2::Union{Vector{Float64}, Matrix{Float64}},
                        Z1::Matrix{Float64}, Z2::Union{Vector{Float64}, Matrix{Float64}})
-    
+
     # Dimensions
     K1 = size(X1, 2)
     L2 = ndims(Z2) == 1 ? 1 : size(Z2, 2)
-    
+
     # Full instrument matrix
     Z = Matrix{Float64}(hcat(Z1, Z2))
-    
+    L = size(Z, 2)
+
     # First-stage regression
     X2_vec = X2 isa Vector ? X2 : X2[:, 1]
     π_hat, V = lm_ols(Vector{Float64}(X2_vec), Z)
-    
-    # Select coefficients on excluded instruments (last L2 elements)
-    π2 = π_hat[end-L2+1:end]
-    V22 = V[end-L2+1:end, end-L2+1:end]
-    
-    # F-statistic: (π2)' (V22)⁻¹ (π2) / L2
-    F = nothing  # YOUR CODE HERE: (π2' * inv(V22) * π2) / L2
-    
+
+    # Selection matrix R (L₂ × L): selects the last L₂ coefficients (corresponding to Z₂)
+    # Hint: R should have zeros for the Z₁ positions and an identity block for Z₂
+    R = nothing  # YOUR CODE HERE
+
+    # Wald F-statistic: F = (Rπ̂)' (R V R')⁻¹ (Rπ̂) / L₂
+    # Hint: compute Rπ̂ and RVR' first, then form the quadratic form
+    F = nothing  # YOUR CODE HERE
+
     return F
 end
