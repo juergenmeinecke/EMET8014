@@ -107,7 +107,7 @@ function lm_iv(Y::Vector{Float64}, X1::Matrix{Float64}, X2::Union{Vector{Float64
     Z = Matrix{Float64}(hcat(Z1, Z2))
     N, K = size(X)
     
-    # IV estimator: β = (Z'X)⁻¹ Z'Y
+    # IV estimator: β_hat = (Z'X)⁻¹ Z'Y
     β_hat = nothing  # YOUR CODE HERE: (Z' * X) \ (Z' * Y)
     
     # Residuals (using original X, not predicted X)
@@ -163,7 +163,7 @@ function lm_2sls(Y::Vector{Float64}, X1::Matrix{Float64}, X2::Union{Vector{Float
     XtZ = nothing      # YOUR CODE HERE: X' * Z
     ZtY = nothing      # YOUR CODE HERE: Z' * Y
     
-    # 2SLS estimator: β = (X'PzX)⁻¹ X'PzY = (X'Z (Z'Z)⁻¹ Z'X)⁻¹ X'Z (Z'Z)⁻¹ Z'Y
+    # 2SLS estimator: β_hat = (X'PzX)⁻¹ X'PzY = (X'Z (Z'Z)⁻¹ Z'X)⁻¹ X'Z (Z'Z)⁻¹ Z'Y
     XtPzX = nothing    # YOUR CODE HERE: XtZ * ZtZ_inv * XtZ'
     XtPzY = nothing    # YOUR CODE HERE: XtZ * ZtZ_inv * ZtY
     β_hat = nothing    # YOUR CODE HERE: XtPzX \ XtPzY

@@ -1,0 +1,29 @@
+Contains data from labsup.dta
+  obs:        31,857                          
+ vars:            19                          2 Jan 2002 10:01
+ size:     1,019,424 (0.2% of memory free)
+-------------------------------------------------------------------------------
+              storage  display     value
+variable name   type   format      label      variable label
+-------------------------------------------------------------------------------
+1.kidcount        byte   %8.0g                  number of kids
+2.morekids        byte   %8.0g                  had more than 2 kids
+3.boys2           byte   %8.0g                  first two births boys
+4.girls2          byte   %8.0g                  first two births girls
+5.boy1st          byte   %8.0g                  first birth boy
+6.boy2nd          byte   %8.0g                  second birth boy
+7.samesex         byte   %8.0g                  first two kids are of same sex
+8.multi2nd        byte   %8.0g                  =1 if 2nd birth is twin
+9.age             byte   %8.0g                  age of mom
+10.agefstm         byte   %8.0g                  age of mom at first birth
+11.black           byte   %8.0g                  =1 of black
+12.hispan          byte   %8.0g                  =1 if hispanic
+13.worked          byte   %8.0g                  mom worked last year
+14.weeks           byte   %8.0g                  weeks worked mom
+15.hours           byte   %8.0g                  hours of work per week, mom
+16.labinc          float  %9.0g                  mom's labor income, $1000s
+17.faminc          float  %9.0g                  family income, $1000s
+18.nonmomi         float  %9.0g                  'non-mom' income, $1000s
+19.educ            byte   %8.0g                  moms years of education
+-------------------------------------------------------------------------------
+Sorted by:  
