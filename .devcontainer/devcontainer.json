@@ -1,0 +1,15 @@
+{
+    "name": "EMET8014 Julia",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "julialang.language-julia",
+                "ms-toolsai.jupyter"
+            ]
+        }
+    },
+    "remoteUser": "vscode"
+}
