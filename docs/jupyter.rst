@@ -213,6 +213,7 @@ For EMET8014, you'll need the following packages:
    pkg> add StatsPlots         # Statistical plotting extensions
    pkg> add Optim              # Optimization algorithms
    pkg> add Roots              # Root finding
+   pkg> add Downloads          # Downloading files
    pkg> add LinearAlgebra      # Linear algebra (built-in, usually pre-installed)
    pkg> add Statistics         # Basic statistics (built-in, usually pre-installed)
    pkg> add DelimitedFiles     # Reading CSV files (built-in)
@@ -224,8 +225,10 @@ Install them all at once like so:
 
    pkg> add Distributions Plots StatsPlots Optim Roots 
 
-.. note::
-   The built-in packages (``LinearAlgebra``, ``Statistics``, ``DelimitedFiles``, ``Random``) are part of Julia's standard library and typically don't need explicit installation. However, if you encounter issues, you can still use ``pkg> add ...`` to ensure they're available.
+.. note:: The built-in packages (``Downloads``, ``LinearAlgebra``, ``Statistics``,
+   ``DelimitedFiles``, ``Random``) are part of Julia's standard library and typically don't need
+   explicit installation. However, if you encounter issues, you can still use ``pkg> add ...`` to
+   ensure they're available.
 
 Using Packages
 ~~~~~~~~~~~~~~
