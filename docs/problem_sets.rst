@@ -28,7 +28,7 @@ final problem set will be posted in Week 11.
      - Problem Set
      - Due when?
    * - 1
-     - :download:`Problem Set 1 <../underhood/problem_sets/problem_set_1.pdf>`
+     - :download:`Problem Set 1 <../problem_sets/problem_set_1.pdf>`
      - Monday morning week 2
 
 
