@@ -19,6 +19,25 @@ appropriate smart phone app) and upload it on Canvas.
 There will be no problem set in Week 5 (to allow time to study for the Week 6 midterm exam). The
 final problem set will be posted in Week 11.
 
+
+.. list-table::
+   :widths: 10 30 20
+   :header-rows: 1
+
+   * - Week
+     - Problem Set
+     - Due when?
+   * - 1
+     - :download:`Problem Set 1 <../underhood/problem_sets/problem_set_1.pdf>`
+     - Monday morning week 2
+
+
+
+
+
+
+
+
 Marking
 -------
 
