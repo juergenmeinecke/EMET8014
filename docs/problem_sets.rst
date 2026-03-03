@@ -33,6 +33,35 @@ final problem set will be posted in Week 11.
    * - 2
      - :download:`Problem Set 2 <../problem_sets/problem_set_2.pdf>`
      - Monday morning week 3
+   * - 3
+     - Problem Set 3
+     - Monday morning week 4
+   * - 4
+     - Problem Set 4
+     - Monday morning week 5
+   * - 5
+     - No new problem set
+     - (to give you study time for midterm exam)
+   * - 6
+     - Problem Set 5
+     - Monday morning week 7
+       (after the semester break)
+   * - 7
+     - Problem Set 6
+     - Monday morning week 8
+   * - 8
+     - Problem Set 7
+     - Monday morning week 9
+   * - 9
+     - Problem Set 8
+     - Monday morning week 10
+   * - 10
+     - Problem Set 9
+     - Monday morning week 11
+   * - 11
+     - Problem Set 10
+     - Monday morning week 12
+
 
 
 
