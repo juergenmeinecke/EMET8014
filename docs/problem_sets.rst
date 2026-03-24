@@ -43,7 +43,7 @@ final problem set will be posted in Week 11.
      - No new problem set
      - (to give you study time for midterm exam)
    * - 6
-     - Problem Set 5
+     - :download:`Problem Set 5 <../problem_sets/problem_set_5.pdf>`
      - Monday morning week 7
        (after the semester break)
    * - 7
