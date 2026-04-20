@@ -47,7 +47,7 @@ final problem set will be posted in Week 11.
      - Monday morning week 7
        (after the semester break)
    * - 7
-     - Problem Set 6
+     - :download:`Problem Set 6 <../problem_sets/problem_set_6.pdf>`
      - Monday morning week 8
    * - 8
      - Problem Set 7
