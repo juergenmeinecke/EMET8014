@@ -50,7 +50,7 @@ final problem set will be posted in Week 11.
      - :download:`Problem Set 6 <../problem_sets/problem_set_6.pdf>`
      - Tuesday morning week 8
    * - 8
-     - Problem Set 7
+     - :download:`Problem Set 7 <../problem_sets/problem_set_7.pdf>`
      - Monday morning week 9
    * - 9
      - Problem Set 8
