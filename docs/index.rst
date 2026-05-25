@@ -44,6 +44,7 @@ Advanced Econometrics I!
     jupyter
     problem_sets
     assignments
+    exam
     textbooks
     emet2007
 ..
